@@ -78,7 +78,7 @@ let matchRawRPKI = async (asn, ipVer, rpkiStatus) => {
     return matchedStrList;
 };
 
-// requestType = {"asn", "ip_asn", "ip", "ip_filter_status", "filter_status_only", "description_text"}
+// TODO: requestType = {"asn", "ip_asn", "ip", "ip_filter_status", "filter_status_only", "description_text"}
 // keepDuplicate: optional (default = true)
 let matchRPKI = async (asn, ipVer, rpkiStatus, requestType, keepDuplicate) => {
     if (!(asn && ipVer && rpkiStatus && requestType)) {
